@@ -1,6 +1,12 @@
-import { createApp } from "vue";
-import "./style.css";
-import "bootstrap/dist/css/bootstrap.css";
-import App from "./App.vue";
+import Vue from 'vue'
+import App from './App.vue'
+import vuetify from './plugins/vuetify';
+import VueYouTubeEmbed from 'vue-youtube-embed'
 
-createApp(App).mount("#app");
+Vue.use(VueYouTubeEmbed)
+Vue.config.productionTip = false
+
+new Vue({
+  vuetify,
+  render: h => h(App)
+}).$mount('#app')
