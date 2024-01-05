@@ -36,6 +36,8 @@ Compiles and minifies for production
 npm run build
 ```
 
+![Demo](src/assets/img/ss-fullpage.png)
+
 ### 🛠️ Technologies
 
 The following tools were used in the construction of the project:
