@@ -26,7 +26,7 @@
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
-                    label="Nome"
+                    label="Name"
                     required
                 ></v-text-field>
 
@@ -53,7 +53,7 @@
                     class="mt-3"
                     @click="submit"
                 >
-                  Enviar
+                Send
                 </v-btn>
               </v-form>
             </v-col>
@@ -111,18 +111,18 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "O campo nome é obrigatório",
-      (v) => (v && v.length >= 6) || "O nome precisa ter mais de 6 caracteres",
+      (v) => !!v || "The name field is required",
+      (v) => (v && v.length >= 6) || "The name must be longer than 6 characters",
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "O campo email é obrigatório",
-      (v) => /.+@.+\..+/.test(v) || "O E-mail precisa ser válido",
+      (v) => !!v || "The email field is mandatory",
+      (v) => /.+@.+\..+/.test(v) || "Email must be valid",
     ],
     textArea: "",
     textAreaRules: [
-      (v) => !!v || "O campo de texto é obrigatório",
-      (v) => (v && v.length >= 10) || "Mínimo de 10 caracteres",
+      (v) => !!v || "The text field is required",
+      (v) => (v && v.length >= 10) || "Minimum 10 characters",
     ],
     lazy: false,
     snackbar: {
